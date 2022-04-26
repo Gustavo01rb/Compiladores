@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(ab){
+    int a = 1;
+    int b = 3021;
+    string aux = "teste"
+
+    if (a*b){
+        int soma = a + b;
+    }
+    return 0;
+}
