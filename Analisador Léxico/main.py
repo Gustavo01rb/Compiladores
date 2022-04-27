@@ -1,4 +1,6 @@
+from symtable import Symbol
 from lexico import Lexico
+from symbols import Symbols
 
 file_name = "arquivo.txt"
 
