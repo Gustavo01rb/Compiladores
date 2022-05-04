@@ -20,11 +20,11 @@ class Symbols:
 
     #Funções de verficação
     def get_reserved_word_list(self):
-        return ["const", "while", "for", "if", "#include", "<stdio.h>", "<stdlib.h>", "do", "return", "int", "string", "float", "double", "bool", ";"]
+        return ["const", "while", "for", "if", "#include", "stdio.h", "stdlib.h", "do", "return", "int", "string", "float", "double", "bool", ";"]
     def get_arithimetic_operator(self):
-        return r'<|>|\+|-|\*|/|%'
+        return r'\+|-|\*|/|%'
     def get_logic_operator(self):
-        return r'==|>=|<=|!=|!'
+        return r'==|>=|<=|!=|!|<|>'
     def get_assignment_operator(self):
         return r'='
     def get_delimiter(self):
@@ -33,24 +33,42 @@ class Symbols:
 
     #Funções de resposta
     def is_reserved_word(self, key):
-        if(key in self.get_reserved_word_list()):
-            return self.reserved_word
+        if key in self.get_reserved_word_list():
+            return {
+                "type": self.reserved_word
+                }
         return False
+    
     def is_arithimetic_operator(self, key):
-        if(re.search(self.get_arithimetic_operator(), key)):
-            return self.arithimetic_operator
+        if re.findall(self.get_arithimetic_operator(), key):
+            return {
+                "type" : self.arithimetic_operator,
+                "match": re.findall(self.get_arithimetic_operator(), key)
+                }
         return False
+    
     def is_logic_operator(self, key):
-        if(re.search(self.get_logic_operator(), key)):
-            return self.logic_operator
+        if re.findall(self.get_logic_operator(), key):
+            return {
+                "type"  : self.logic_operator,
+                "match" : re.findall(self.get_logic_operator(), key)
+            }
         return False
+        
     def is_assignment_operator(self, key):
-        if(re.search(self.get_assignment_operator(), key)):
-            return self.assignment_operator
+        if re.findall(self.get_assignment_operator(), key):
+            return {
+                "type" : self.assignment_operator,
+                "match": re.findall(self.get_assignment_operator(), key)
+            }
         return False
+
     def is_delimiter(self, key):
-        if(re.search(self.get_delimiter(), key)):
-            return self.delimiter
+        if re.findall(self.get_delimiter(), key):
+            return {
+                "type" : self.delimiter,
+                "match": re.findall(self.get_delimiter(), key)
+            }
         return False
 
 
