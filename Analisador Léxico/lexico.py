@@ -21,7 +21,7 @@ class Lexico:
             "type"  : type 
         })            
 
-    def __case_logic_operator(self, response, expression):
+    def __analyse_token(self, response, expression):
         operator           = response["match"][0]        # Pegando o operador a ser analisado 
         position_operator  = expression.find(operator)   # Pegando a posição do primeiro operador lógico da expressão 
 
@@ -31,24 +31,23 @@ class Lexico:
 
 
         if position_operator > 0:
-            self.__analyse_token(expression[:position_operator])             # Verificando o conteúdo que vem antes do operador
+            self.__validate_token(expression[:position_operator])             # Verificando o conteúdo que vem antes do operador
             
-        self.add_token(operator, response["type"])                           # Adiciona o operador a lista de tokens
-        self.__analyse_token(expression[position_operator + len(operator):]) # Analisa partes depois do operador
+        self.add_token(operator, response["type"])                            # Adiciona o operador a lista de tokens
+        self.__validate_token(expression[position_operator + len(operator):]) # Analisa partes depois do operador
 
 
 
 
 
 
-    def __analyse_token(self, token,):
+    def __validate_token(self, token,):
 
         if token == "" or token == None: return #Verificação de palavra vazia
-
         symbols = Symbols()
-        result = symbols.is_reserved_word(token)
         
         #Verificando se é palavra reservada 
+        result = symbols.is_reserved_word(token)
         if result:
             self.add_token(token, result["type"]) 
             return
@@ -56,8 +55,42 @@ class Lexico:
         #Verificando se há operadores lógicos
         result = symbols.is_logic_operator(token)
         if result:
-            self.__case_logic_operator(result, token)
-          
+            self.__analyse_token(result, token)
+            return
+        
+        #Verificando se há Delimitadores
+        result = symbols.is_delimiter(token)
+        if result:
+            self.__analyse_token(result, token)
+            return
+        
+        #Verificando se há operador atitmético
+        result = symbols.is_arithimetic_operator(token)
+        if result:
+            self.__analyse_token(result, token)
+            return      
+        
+        #Verificando se há Atribuição de igualdade
+        result = symbols.is_assignment_operator(token)
+        if result:
+            self.__analyse_token(result, token)
+            return
+        
+        #Verificando se há ";" no final da string
+        result = symbols.is_end_of_line(token)
+        if result:
+            self.__analyse_token(result, token)
+            return
+        
+            
+
+        if token.isnumeric():
+            self.add_token(token, "Constante Numérica")
+            return
+        
+        self.add_token(token, "Variável")
+        return
+
 
 
 
@@ -71,7 +104,7 @@ class Lexico:
             line = line.split() # Função que separa as stirngs. Nesse caso com base em " "
             for iterator in line:
                 iterator = iterator.strip()
-                self.__analyse_token(iterator)
+                self.__validate_token(iterator)
 
 
 

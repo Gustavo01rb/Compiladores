@@ -17,10 +17,13 @@ class Symbols:
     @property
     def delimiter(self):
         return "Delimitador"
+    @property
+    def end_line(self):
+        return "Fim de linha"
 
     #Funções de verficação
     def get_reserved_word_list(self):
-        return ["const", "while", "for", "if", "#include", "stdio.h", "stdlib.h", "do", "return", "int", "string", "float", "double", "bool", ";"]
+        return ["const", "while", "for", "if", "#include", "stdio.h", "stdlib.h", "do", "return", "int", "string", "float", "double", "bool"]
     def get_arithimetic_operator(self):
         return r'\+|-|\*|/|%'
     def get_logic_operator(self):
@@ -29,6 +32,8 @@ class Symbols:
         return r'='
     def get_delimiter(self):
         return r'\(|\)|{|}|\[|]'
+    def get_end_line(self):
+        return r';$'
     
 
     #Funções de resposta
@@ -68,6 +73,14 @@ class Symbols:
             return {
                 "type" : self.delimiter,
                 "match": re.findall(self.get_delimiter(), key)
+            }
+        return False
+
+    def is_end_of_line(self, key):
+        if re.findall(self.get_end_line(), key):
+            return {
+                "type" : self.end_line,
+                "match": re.findall(self.get_end_line(), key)
             }
         return False
 
