@@ -74,15 +74,7 @@ class Lexico:
         result = symbols.is_assignment_operator(token)
         if result:
             self.__analyse_token(result, token)
-            return
-        
-        #Verificando se há ";" no final da string
-        result = symbols.is_end_of_line(token)
-        if result:
-            self.__analyse_token(result, token)
-            return
-        
-            
+            return    
 
         if token.isnumeric():
             self.add_token(token, "Constante Numérica")
@@ -111,6 +103,6 @@ class Lexico:
     def print_tokens(self):
         print("\nTokens obtidos:")
         for iterator in self.__tokens:
-            print("{:>10} -> {}".format(iterator['token'], iterator['type']))
+            print("{:>10} - {}".format(iterator['token'], iterator['type']))
         print("\n\nQuantidade de Tokens: {} \n".format(len(self.__tokens)))
         

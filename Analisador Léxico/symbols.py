@@ -17,9 +17,6 @@ class Symbols:
     @property
     def delimiter(self):
         return "Delimitador"
-    @property
-    def end_line(self):
-        return "Fim de linha"
 
     #Funções de verficação
     def get_reserved_word_list(self):
@@ -31,9 +28,8 @@ class Symbols:
     def get_assignment_operator(self):
         return r'='
     def get_delimiter(self):
-        return r'\(|\)|{|}|\[|]'
-    def get_end_line(self):
-        return r';$'
+        return r'\(|\)|{|}|\[|]|;'
+
     
 
     #Funções de resposta
@@ -76,13 +72,6 @@ class Symbols:
             }
         return False
 
-    def is_end_of_line(self, key):
-        if re.findall(self.get_end_line(), key):
-            return {
-                "type" : self.end_line,
-                "match": re.findall(self.get_end_line(), key)
-            }
-        return False
 
 
     
