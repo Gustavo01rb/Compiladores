@@ -28,7 +28,7 @@ class Symbols:
         return "Constante Numérica"
     @property
     def function(self):
-        return "Função"
+        return "Identificador de função"
 
     #Funções de verficação
     def __get_reserved_word_list(self):

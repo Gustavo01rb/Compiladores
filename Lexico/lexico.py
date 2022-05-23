@@ -1,5 +1,4 @@
-from unicodedata import name
-from symbols import Symbols
+from Lexico.symbols import Symbols
 
 class Lexico:
 
@@ -104,6 +103,10 @@ class Lexico:
                     self.__tokens[index-1]['type'] = symbols.delimiter
                 if(self.__tokens[index+1]['type'] == symbols.logic_operator):
                     self.__tokens[index+1]['type'] = symbols.delimiter
+            if iterator['token'] == "(":
+                if self.tokens[index-1]['type'] == symbols.identifier:
+                    self.tokens[index-1]['type'] = symbols.function
+
 
 
     def print_tokens(self):

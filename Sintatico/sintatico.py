@@ -1,3 +1,4 @@
+
 class Sintatico:
 
     def __init__(self, tokens) -> None:

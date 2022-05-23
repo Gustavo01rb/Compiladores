@@ -1,5 +1,4 @@
-from lexico import Lexico
-from sintatico import Sintatico
+''' from lexico import Lexico
 from symbols import Symbols
 import re
 
@@ -9,11 +8,7 @@ def main():
     analisador_lexico = Lexico(file_name)
     analisador_lexico.tokenization()
     analisador_lexico.print_tokens()
-
-    analisador_sintatico = Sintatico(analisador_lexico.tokens)
-    
-
-
     return 0
 
 main()
+'''
