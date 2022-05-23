@@ -26,10 +26,13 @@ class Symbols:
     @property
     def numeric_constant(self):
         return "Constante Numérica"
+    @property
+    def function(self):
+        return "Função"
 
     #Funções de verficação
     def __get_reserved_word_list(self):
-        return ["const", "while", "for", "if", "#include", "stdio.h", "stdlib.h", "do", "return", "int", "string", "float", "double", "bool"]
+        return ["const", "while", "for", "if", "#include", "stdio.h", "stdlib.h", "do", "return", "int", "float", "double"]
     def __get_arithimetic_operator(self):
         return r'\+|-|\*|/|%'
     def __get_logic_operator(self):
