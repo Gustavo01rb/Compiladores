@@ -10,6 +10,8 @@ def main():
     analisador_lexico.print_tokens()
 
     analisador_sintatico = Sintatico(analisador_lexico.tokens)
+
+    analisador_sintatico.analyze()
     
 
 
