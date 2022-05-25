@@ -3,4 +3,3 @@ class Token:
         self.data = data
         self.type = type
         self.line = line
-    

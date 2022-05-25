@@ -5,9 +5,9 @@ Tokens obtidos na análise léxica:
 |  Token    |           Tipo            | Linha |
 -------------------------------------------------
 |  #include | Palavra reservada         |   0   |
-|         + | Operador aritmético       |   0   |
+|         < | Delimitador               |   0   |
 |   stdio.h | Biblioteca                |   0   |
-|         > | Operador Lógico           |   0   |
+|         > | Delimitador               |   0   |
 |       int | Palavra reservada         |   2   |
 |      main | Identificador de função   |   2   |
 |         ( | Delimitador               |   2   |
@@ -30,34 +30,37 @@ Tokens obtidos na análise léxica:
 |         - | Operador aritmético       |   5   |
 |         a | Identificador             |   5   |
 |         ; | Delimitador               |   5   |
-|       int | Palavra reservada         |   6   |
-|         y | Identificador             |   6   |
-|         = | Operador de atribuição    |   6   |
-|         c | Identificador             |   6   |
-|         + | Operador aritmético       |   6   |
-|        11 | Constante Numérica        |   6   |
+|         x | Identificador             |   6   |
+|        ++ | Operador aritmético       |   6   |
 |         ; | Delimitador               |   6   |
+|       int | Palavra reservada         |   7   |
+|         y | Identificador             |   7   |
 |         = | Operador de atribuição    |   7   |
-|      soma | Identificador             |   7   |
-|         = | Operador de atribuição    |   7   |
-|         a | Identificador             |   7   |
+|         c | Identificador             |   7   |
 |         + | Operador aritmético       |   7   |
-|         b | Identificador             |   7   |
+|        11 | Constante Numérica        |   7   |
 |         ; | Delimitador               |   7   |
 |       int | Palavra reservada         |   8   |
-|         a | Identificador             |   8   |
+|      soma | Identificador             |   8   |
 |         = | Operador de atribuição    |   8   |
-|         b | Identificador             |   8   |
+|         a | Identificador             |   8   |
 |         + | Operador aritmético       |   8   |
-|         x | Identificador             |   8   |
-|         * | Operador aritmético       |   8   |
-|         y | Identificador             |   8   |
+|         b | Identificador             |   8   |
 |         ; | Delimitador               |   8   |
-|    return | Palavra reservada         |   9   |
-|         0 | Constante Numérica        |   9   |
+|       int | Palavra reservada         |   9   |
+|         a | Identificador             |   9   |
+|         = | Operador de atribuição    |   9   |
+|         b | Identificador             |   9   |
+|         + | Operador aritmético       |   9   |
+|         x | Identificador             |   9   |
+|         * | Operador aritmético       |   9   |
+|         y | Identificador             |   9   |
 |         ; | Delimitador               |   9   |
-|         } | Delimitador               |  10   |
+|    return | Palavra reservada         |  10   |
+|         0 | Constante Numérica        |  10   |
+|         ; | Delimitador               |  10   |
+|         } | Delimitador               |  11   |
 -------------------------------------------------
 
 
-Quantidade de Tokens: 53 
+Quantidade de Tokens: 56 

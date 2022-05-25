@@ -102,6 +102,11 @@ class Lexical:
                 if self.__tokens[index+1].data == "(":
                     iterator.type = TokensTypes.functions.value
                     continue
+            elif iterator.type == TokensTypes.library.value:
+                if self.__tokens[index-1].data == "<":
+                    self.__tokens[index-1].type = TokensTypes.delimiter.value
+                if self.__tokens[index+1].data == ">":
+                    self.__tokens[index+1].type = TokensTypes.delimiter.value
 
     def print_tokens(self):
         file = open('outputs/lexical.txt','w')

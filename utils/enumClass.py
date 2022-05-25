@@ -1,4 +1,5 @@
 from enum import Enum
+from utils.C_rules import C_RESERVED_WORD
 
 class TokensTypes(Enum):
     reserved_word        = "Palavra reservada"
@@ -12,8 +13,8 @@ class TokensTypes(Enum):
     functions            = "Identificador de função"
 
 class RegexStructure(Enum):
-    reserved_word        = ["const", "while", "for", "if", "#include", "do", "return", "int", "float", "double", "char"]
-    arithimetic_operator = [r'\+|-|\*|/|%', "Operador aritmético"]
+    reserved_word        = C_RESERVED_WORD.all()
+    arithimetic_operator = [r'\+\+|--|\+|-|\*|/|%', "Operador aritmético"]
     logic_operator       = [r'==|>=|<=|!=|!|<|>', "Operador Lógico"] 
     assignment_operator  = [r'=', "Operador de atribuição"]
     delimiter            = [r'\(|\)|{|}|\[|]|;', "Delimitador"]
