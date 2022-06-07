@@ -15,10 +15,3 @@ class C_RESERVED_WORD:
     @staticmethod
     def returns():
         return ["return"]
-
-class C_SENTENCES:
-    @staticmethod
-    def include_sentence():
-        return 0
-
-        kxshavv

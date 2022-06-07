@@ -14,9 +14,9 @@ class TokensTypes(Enum):
 
 class RegexStructure(Enum):
     reserved_word        = C_RESERVED_WORD.all()
+    assignment_operator  = [r'=|\+=|-=', "Operador de atribuição"]
     arithimetic_operator = [r'\+\+|--|\+|-|\*|/|%', "Operador aritmético"]
     logic_operator       = [r'==|>=|<=|!=|!|<|>', "Operador Lógico"] 
-    assignment_operator  = [r'=', "Operador de atribuição"]
     delimiter            = [r'\(|\)|{|}|\[|]|;', "Delimitador"]
     library              = [r'[a-z]*\.h$', "Biblioteca"]
 

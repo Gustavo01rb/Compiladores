@@ -14,7 +14,7 @@ Tokens obtidos na análise léxica:
 |         ) | Delimitador               |   2   |
 |         { | Delimitador               |   2   |
 |       int | Palavra reservada         |   3   |
-|         a | Identificador             |   3   |
+|         < | Operador Lógico           |   3   |
 |         = | Operador de atribuição    |   3   |
 |         3 | Constante Numérica        |   3   |
 |         ; | Delimitador               |   3   |
