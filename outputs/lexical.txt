@@ -14,7 +14,7 @@ Tokens obtidos na análise léxica:
 |         ) | Delimitador               |   2   |
 |         { | Delimitador               |   2   |
 |       int | Palavra reservada         |   3   |
-|         < | Operador Lógico           |   3   |
+|         a | Identificador             |   3   |
 |         = | Operador de atribuição    |   3   |
 |         3 | Constante Numérica        |   3   |
 |         ; | Delimitador               |   3   |
@@ -38,7 +38,6 @@ Tokens obtidos na análise léxica:
 |         = | Operador de atribuição    |   7   |
 |         c | Identificador             |   7   |
 |         + | Operador aritmético       |   7   |
-|        11 | Constante Numérica        |   7   |
 |         ; | Delimitador               |   7   |
 |       int | Palavra reservada         |   8   |
 |      soma | Identificador             |   8   |
@@ -63,4 +62,4 @@ Tokens obtidos na análise léxica:
 -------------------------------------------------
 
 
-Quantidade de Tokens: 56 
+Quantidade de Tokens: 55 
