@@ -10,7 +10,7 @@ def main():
     analisador_lexico.print_tokens()
 
     analisador_sintatico = Sintax(analisador_lexico.tokens)
-    analisador_sintatico.analyze()
+    analisador_sintatico.analyze(print=True)
 
 
     

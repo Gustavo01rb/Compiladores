@@ -19,11 +19,11 @@ class Sintax:
             return
         self.__current_token = self.__tokens[self.__current_index]
     
-    def analyze(self):
+    def analyze(self, print=False):
         while(self.__current_index < len(self.__tokens)):
             self.__analyze_sentence()
             self.__next_token()
-        self.__error_log.print()
+        if(print): self.__error_log.print()
     
     def __analyze_sentence(self):
         

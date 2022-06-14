@@ -131,5 +131,5 @@ class Lexical:
         file.write("-------------------------------------------------\n")
         
         print("\n\nQuantidade de Tokens: {} \n".format(len(self.__tokens)))
-        file.write("\n\nQuantidade de Tokens: {} \n".format(len(self.__tokens)))
+        file.write("\n\nQuantidade de Tokens: {}".format(len(self.__tokens)))
         file.close()

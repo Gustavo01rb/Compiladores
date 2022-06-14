@@ -39,6 +39,7 @@ Tokens obtidos na análise léxica:
 |         c | Identificador             |   7   |
 |         + | Operador aritmético       |   7   |
 |        11 | Constante Numérica        |   7   |
+|         ; | Delimitador               |   7   |
 |       int | Palavra reservada         |   8   |
 |      soma | Identificador             |   8   |
 |         = | Operador de atribuição    |   8   |
@@ -62,4 +63,4 @@ Tokens obtidos na análise léxica:
 -------------------------------------------------
 
 
-Quantidade de Tokens: 55 
+Quantidade de Tokens: 56
