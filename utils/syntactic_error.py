@@ -25,6 +25,8 @@ class Sintactic_error:
     def add_unspected_type(self, token, expected):
         self.__errors.append("[ERRO]-> Linha: {} Esperado um {} no lugar de {}".format(token.line,expected, token.data))
 
+
+
         
 
     '''
