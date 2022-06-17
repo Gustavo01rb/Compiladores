@@ -1,1 +1,14 @@
-Não foram encontrados erros sintáticos
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 4.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 4.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 4.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 4.
+[ERRO] -> Um erro inexperado ocorreu na linha 6. Referencia não definida para c.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 6.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 6.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 6.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 6.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 6.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 6.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 6.
+[ERRO]-> Delimitador ausente: Esperado um ';' ao final da linha 6.
+[ERRO] -> Um erro inexperado ocorreu na linha 6. Referencia não definida para +.

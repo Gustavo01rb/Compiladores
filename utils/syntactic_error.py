@@ -1,7 +1,3 @@
-from enum import Enum, auto
-from utils.token import Token
-
-
 class Sintactic_error:
     def __init__(self) -> None:
         self.__errors = list()
@@ -14,7 +10,7 @@ class Sintactic_error:
             return
         for erro in self.__errors:
             print(erro)
-            file.write(erro)
+            file.write(erro + "\n")
         file.close()
         
     def add_generic_error(self, token):

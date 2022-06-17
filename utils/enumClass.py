@@ -19,6 +19,7 @@ class RegexStructure(Enum):
     logic_operator       = [r'==|>=|<=|!=|!|<|>', "Operador Lógico"] 
     delimiter            = [r'\(|\)|{|}|\[|]|;', "Delimitador"]
     library              = [r'[a-z]*\.h$', "Biblioteca"]
+    separator            = [r',', "Separador"]
 
 class TokenStructure(Enum):
     type  = 'type'

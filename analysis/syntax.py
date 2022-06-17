@@ -19,7 +19,7 @@ class Sintax:
             return
         self.__current_token = self.__tokens[self.__current_index]
     
-    def analyze(self, print=False):
+    def analyze(self, print = False):
         while(self.__current_index < len(self.__tokens)):
             self.__analyze_sentence()
             self.__next_token()
@@ -28,7 +28,7 @@ class Sintax:
     def __analyze_sentence(self):
         
         if self.__current_token.type == TokensTypes.reserved_word.value : self.__case_reserved_word()
-        if self.__current_token.type == TokensTypes.identifier.value : self.__case_identifier()
+        if self.__current_token.type == TokensTypes.identifier.value :    self.__case_identifier()
 
     def __case_identifier(self):
         self.__next_token()
