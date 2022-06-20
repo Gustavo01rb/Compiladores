@@ -11,6 +11,7 @@ class TokensTypes(Enum):
     identifier           = "Identificador"
     numeric_constant     = "Constante Numérica"
     functions            = "Identificador de função"
+    separator            = "Separador"
 
 class RegexStructure(Enum):
     reserved_word        = C_RESERVED_WORD.all()

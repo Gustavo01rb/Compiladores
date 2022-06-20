@@ -19,7 +19,7 @@ class Sintax:
             return
         self.__current_token = self.__tokens[self.__current_index]
     
-    def analyze(self, print = False):
+    def analyze(self, print=False):
         while(self.__current_index < len(self.__tokens)):
             self.__analyze_sentence()
             self.__next_token()
@@ -28,7 +28,7 @@ class Sintax:
     def __analyze_sentence(self):
         
         if self.__current_token.type == TokensTypes.reserved_word.value : self.__case_reserved_word()
-        if self.__current_token.type == TokensTypes.identifier.value :    self.__case_identifier()
+        if self.__current_token.type == TokensTypes.identifier.value : self.__case_identifier()
 
     def __case_identifier(self):
         self.__next_token()
@@ -71,46 +71,56 @@ class Sintax:
     
     def __case_reserved_word_declaration_type(self):
         self.__next_token()
-        if self.__current_token.type == TokensTypes.identifier.value:
-            self.__next_token()
-            if self.__current_token.data == ';': return
-            if self.__current_token.type != TokensTypes.assignment_operator.value:
-                self.__error_log.add_unspected_type(self.__current_token, TokensTypes.assignment_operator.value)
-            self.__equation()
-            return
+        if self.__case_reserved_word_declaration_type_identifier(): return
         if self.__current_token.type == TokensTypes.functions.value:
             self.__case_function()
             return
         else: self.__error_log.add_unspected_type(self.__current_token, TokensTypes.identifier.value)
-        
-
-
-    def __equation(self):
+    
+    def __case_reserved_word_declaration_type_identifier(self):
+        if self.__current_token.type != TokensTypes.identifier.value: return False
         self.__next_token()
+        if self.__current_token.type == TokensTypes.separator.value:
+            self.__next_token()
+            return self.__case_reserved_word_declaration_type_identifier()
+            
+        if self.__current_token.data == ';': return True
+        if self.__current_token.type != TokensTypes.assignment_operator.value:
+            self.__error_log.add_unspected_type(self.__current_token, TokensTypes.assignment_operator.value)
+        self.__equation()
+        return True
+
+    def __equation(self, next = True):
+        if next: self.__next_token()
         if self.__current_token.type == TokensTypes.delimiter.value: #casting
             if self.__current_token.data != '(': 
                 self.__error_log.add_generic_error(self.__current_token)
                 return
             self.__next_token()
-            if self.__current_token.type  not in C_RESERVED_WORD.type_declaration():
+            if (self.__current_token.type == TokensTypes.numeric_constant.value or
+                self.__current_token.type == TokensTypes.identifier.value       or
+                self.__current_token.type == TokensTypes.functions.value):
+                self.__equation(False)
+
+            elif self.__current_token.type  not in C_RESERVED_WORD.type_declaration():
                 self.__error_log.add_generic_error(self.__current_token)
                 return
-            self.__next_token()
-            if self.__current_token.data != ')': 
+            if self.__current_token.data != ')':
                 self.__error_log.add_missing_final_delimiter() # rever aqui
                 return
-            self.__equation()
+            else: return
         
         if (self.__current_token.type != TokensTypes.numeric_constant.value and
             self.__current_token.type != TokensTypes.identifier.value       and
-            self.__current_token.type != TokensTypes.functions.value
-           ):
+            self.__current_token.type != TokensTypes.functions.value):
             self.__error_log.add_generic_error(self.__current_token)
             return
         
         self.__next_token()
-        if self.__current_token.type == TokensTypes.arithimetic_operator.value: self.__equation()
-        if self.__current_token.data == ';' : return
+        if    self.__current_token.type == TokensTypes.arithimetic_operator.value: self.__equation()
+        elif  self.__current_token.data == ';' : return
+        elif  self.__current_token.data == ',' : return
+        elif  self.__current_token.type == TokensTypes.delimiter.value: return
         else: self.__error_log.add_missing_final_delimiter(self.__current_token)
 
 
