@@ -1,7 +1,7 @@
 from utils.token import Token
 from utils.enumClass import TokenStructure, TokensTypes
 from utils.C_rules import C_RESERVED_WORD
-from utils.syntactic_error import Sintactic_error
+from errors.syntactic_error import Sintactic_error
 
 class Sintax:
 
@@ -109,6 +109,8 @@ class Sintax:
                 self.__error_log.add_missing_final_delimiter() # rever aqui
                 return
             else: return
+
+        if  self.__current_token.type == TokensTypes.txt.value: return
         
         if (self.__current_token.type != TokensTypes.numeric_constant.value and
             self.__current_token.type != TokensTypes.identifier.value       and

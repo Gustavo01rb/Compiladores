@@ -1,4 +1,3 @@
-from yaml import parse
 from utils.enumClass import RegexStructure, TokensTypes, TokenStructure
 from utils.token import Token
 import re

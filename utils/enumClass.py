@@ -12,17 +12,31 @@ class TokensTypes(Enum):
     numeric_constant     = "Constante Numérica"
     functions            = "Identificador de função"
     separator            = "Separador"
-
+    txt                  = "Texto"
+ 
 class RegexStructure(Enum):
     reserved_word        = C_RESERVED_WORD.all()
-    assignment_operator  = [r'=|\+=|-=', "Operador de atribuição"]
-    arithimetic_operator = [r'\+\+|--|\+|-|\*|/|%', "Operador aritmético"]
-    logic_operator       = [r'==|>=|<=|!=|!|<|>', "Operador Lógico"] 
-    delimiter            = [r'\(|\)|{|}|\[|]|;', "Delimitador"]
-    library              = [r'[a-z]*\.h$', "Biblioteca"]
-    separator            = [r',', "Separador"]
+    assignment_operator  = [r'=|\+=|-=', TokensTypes.assignment_operator.value]
+    arithimetic_operator = [r'\+\+|--|\+|-|\*|/|%', TokensTypes.arithimetic_operator.value]
+    logic_operator       = [r'==|>=|<=|!=|!|<|>', TokensTypes.logic_operator.value] 
+    delimiter            = [r'\(|\)|{|}|\[|]|;', TokensTypes.delimiter.value]
+    library              = [r'[a-z]*\.h$', TokensTypes.library.value]
+    separator            = [r',', TokensTypes.separator.value]
+    txt                  = [r'^"[a-z]*"$', TokensTypes.txt.value]
 
 class TokenStructure(Enum):
     type  = 'type'
     match = 'match'
     data  = 'data'
+
+class DeclaredType(Enum):
+    integer  = "Inteiro"
+    floating = "Flutuante"
+    string   = "String"
+    char     = "Caractere"
+
+class RegexTypes(Enum):
+    integer  = [r'^\d+$', DeclaredType.integer.value]
+    floating = [r'^\d+\.\d+$|^\d+$', DeclaredType.floating.value]
+    string   = [r'^"\w+|\s*"$', DeclaredType.string.value]
+    char     = [r'^\'\w{1}\'$', DeclaredType.char.value]

@@ -13,7 +13,7 @@ Tokens obtidos na análise léxica:
 |         ( | Delimitador               |   2   |
 |         ) | Delimitador               |   2   |
 |         { | Delimitador               |   3   |
-|       int | Palavra reservada         |   4   |
+|     float | Palavra reservada         |   4   |
 |         a | Identificador             |   4   |
 |         = | Operador de atribuição    |   4   |
 |         2 | Constante Numérica        |   4   |
