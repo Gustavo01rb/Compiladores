@@ -88,6 +88,11 @@ class Sintax:
         if self.__current_token.type != TokensTypes.assignment_operator.value:
             self.__error_log.add_unspected_type(self.__current_token, TokensTypes.assignment_operator.value)
         self.__equation()
+        if self.__current_token.type == TokensTypes.separator.value:
+            self.__next_token()
+            return self.__case_reserved_word_declaration_type_identifier()
+        if self.__current_token.data == ';': return True
+        
         return True
 
     def __equation(self, next = True):
@@ -110,7 +115,7 @@ class Sintax:
                 return
             else: return
 
-        if  self.__current_token.type == TokensTypes.txt.value: return
+        if  self.__current_token.type == TokensTypes.txt.value or self.__current_token.type == TokensTypes.character.value : return
         
         if (self.__current_token.type != TokensTypes.numeric_constant.value and
             self.__current_token.type != TokensTypes.identifier.value       and

@@ -13,16 +13,19 @@ class TokensTypes(Enum):
     functions            = "Identificador de função"
     separator            = "Separador"
     txt                  = "Texto"
- 
+    character            = "Caractere"
+
 class RegexStructure(Enum):
     reserved_word        = C_RESERVED_WORD.all()
     assignment_operator  = [r'=|\+=|-=', TokensTypes.assignment_operator.value]
     arithimetic_operator = [r'\+\+|--|\+|-|\*|/|%', TokensTypes.arithimetic_operator.value]
     logic_operator       = [r'==|>=|<=|!=|!|<|>', TokensTypes.logic_operator.value] 
     delimiter            = [r'\(|\)|{|}|\[|]|;', TokensTypes.delimiter.value]
-    library              = [r'[a-z]*\.h$', TokensTypes.library.value]
+    library              = [r'\w+\.h$', TokensTypes.library.value]
     separator            = [r',', TokensTypes.separator.value]
-    txt                  = [r'^"[a-z]*"$', TokensTypes.txt.value]
+    txt                  = [r'^"\w+"$', TokensTypes.txt.value]
+    character            = [r'^\'\w+\'$', TokensTypes.character.value]
+
 
 class TokenStructure(Enum):
     type  = 'type'

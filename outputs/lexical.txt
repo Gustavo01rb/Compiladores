@@ -13,52 +13,32 @@ Tokens obtidos na análise léxica:
 |         ( | Delimitador               |   2   |
 |         ) | Delimitador               |   2   |
 |         { | Delimitador               |   3   |
-|     float | Palavra reservada         |   4   |
+|       int | Palavra reservada         |   4   |
 |         a | Identificador             |   4   |
 |         = | Operador de atribuição    |   4   |
-|         2 | Constante Numérica        |   4   |
+|         0 | Constante Numérica        |   4   |
 |         , | Separador                 |   4   |
 |         b | Identificador             |   4   |
 |         = | Operador de atribuição    |   4   |
-|         4 | Constante Numérica        |   4   |
+|         0 | Constante Numérica        |   4   |
 |         , | Separador                 |   4   |
 |         c | Identificador             |   4   |
 |         = | Operador de atribuição    |   4   |
-|         6 | Constante Numérica        |   4   |
+|         0 | Constante Numérica        |   4   |
 |         , | Separador                 |   4   |
 |         d | Identificador             |   4   |
 |         = | Operador de atribuição    |   4   |
-|         8 | Constante Numérica        |   4   |
+|         0 | Constante Numérica        |   4   |
 |         , | Separador                 |   4   |
 |         e | Identificador             |   4   |
 |         = | Operador de atribuição    |   4   |
-|         7 | Constante Numérica        |   4   |
+|         0 | Constante Numérica        |   4   |
 |         ; | Delimitador               |   4   |
-|         a | Identificador             |   6   |
-|         = | Operador de atribuição    |   6   |
 |         b | Identificador             |   6   |
-|         + | Operador aritmético       |   6   |
-|         c | Identificador             |   6   |
-|         - | Operador aritmético       |   6   |
-|         7 | Constante Numérica        |   6   |
-|         * | Operador aritmético       |   6   |
-|         e | Identificador             |   6   |
+|         = | Operador de atribuição    |   6   |
+|         0 | Constante Numérica        |   6   |
 |         / | Operador aritmético       |   6   |
-|         a | Identificador             |   6   |
-|         * | Operador aritmético       |   6   |
-|         d | Identificador             |   6   |
-|         - | Operador aritmético       |   6   |
-|         a | Identificador             |   6   |
-|         + | Operador aritmético       |   6   |
-|        10 | Constante Numérica        |   6   |
-|         / | Operador aritmético       |   6   |
-|         ( | Delimitador               |   6   |
-|         c | Identificador             |   6   |
-|         + | Operador aritmético       |   6   |
-|         d | Identificador             |   6   |
-|         + | Operador aritmético       |   6   |
-|        10 | Constante Numérica        |   6   |
-|         ) | Delimitador               |   6   |
+|         0 | Constante Numérica        |   6   |
 |         ; | Delimitador               |   6   |
 |    return | Palavra reservada         |   8   |
 |         0 | Constante Numérica        |   8   |
@@ -67,4 +47,4 @@ Tokens obtidos na análise léxica:
 -------------------------------------------------
 
 
-Quantidade de Tokens: 60
+Quantidade de Tokens: 40

@@ -1,6 +1,8 @@
-from utils.enumClass import RegexStructure, TokensTypes, TokenStructure
+from utils.enumClass import DeclaredType, RegexStructure, TokensTypes, TokenStructure
 from utils.token import Token
 import re
+
+from utils.types import Types
 
 class Lexical:
     def __init__(self, file_name) -> None:
@@ -65,7 +67,7 @@ class Lexical:
 
 
     def __analyse_token(self, token):
-        if token.isnumeric():
+        if token.isnumeric() or Types.what_type(token) == DeclaredType.floating.value:
             return{
                 TokenStructure.type.value  : TokensTypes.numeric_constant.value,
                 TokenStructure.match.value : False,

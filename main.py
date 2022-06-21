@@ -2,7 +2,7 @@ from analysis.lexical import Lexical
 from analysis.syntax import Sintax
 from analysis.semantic import Semantic
 
-file_name = "inputs/Código 1.txt"
+file_name = "inputs/Código 6.txt"
 
 def main():
     analisador_lexico = Lexical(file_name)
