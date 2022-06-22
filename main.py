@@ -2,9 +2,9 @@ from analysis.lexical import Lexical
 from analysis.syntax import Sintax
 from analysis.semantic import Semantic
 
-file_name = "inputs/Código 6.txt"
+#file_name = "inputs/Código 4.txt"
 
-def main():
+def main(file_name):
     analisador_lexico = Lexical(file_name)
     analisador_lexico.tokenization()
     analisador_lexico.print_tokens()
@@ -17,4 +17,7 @@ def main():
 
     return 0
 
-main()
+for i in range(10):
+    file_name = "inputs/Código " + str(i+1) + ".txt"
+    main(file_name)
+

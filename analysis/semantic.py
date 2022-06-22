@@ -26,7 +26,8 @@ class Semantic:
                self.__current_token.type != TokensTypes.functions.value        and
                self.__current_token.type != TokensTypes.identifier.value       and
                self.__current_token.type != TokensTypes.txt.value              and 
-               self.__current_token.type != TokensTypes.character.value
+               self.__current_token.type != TokensTypes.character.value        and
+               self.__current_token.data != ";"
                ): 
             self.__next_token()
     
@@ -52,6 +53,10 @@ class Semantic:
             return
         if self.__current_token.type == TokensTypes.identifier.value:
             self.__case_identifier()
+            return
+        if self.__current_token.data == "}":
+            self.__exclude_scope(self.__scope)
+            return
     
     def __create_new_scope(self, List):
         if not List: return
@@ -59,7 +64,12 @@ class Semantic:
             self.__create_new_scope(List[-1])
             return
         List.append(list())
-    
+    def __exclude_scope(self, List):
+        if not List: return
+        if Types.is_list(List[-1]):
+            if self.__exclude_scope(List[-1]):
+                List.pop()
+        else: return True
     def __add_variable(self, type = False):
         if type : Type = type
         else: Type = self.__current_token.data
@@ -73,6 +83,7 @@ class Semantic:
         self.__next_token()
         if self.__current_token.type == TokensTypes.assignment_operator.value: 
             self.__find_valid_token()
+            if self.__current_token.data == ";": return
             if not self.__check_assignment(previous_token, self.__current_token) : 
                 self.__error_log.add_invalid_assignment(self.__current_token, previous_token.declared_type)
             self.__next_token() 
@@ -98,12 +109,15 @@ class Semantic:
     def __check_expression(self, initial_token):
         while self.__current_token.data != ";":
             self.__find_valid_token()
+            if self.__current_token.data == ";": return
             if self.__current_token.type == TokensTypes.identifier.value:
                 if not self.__search_token_in_scope(self.__current_token, self.__scope):
                     self.__error_log.add_identifier_not_in_scope(self.__current_token)
                     break
                 if initial_token.declared_type != self.__current_token.declared_type :
-                    self.__error_log.add_invalid_assignment(self.__current_token, initial_token.declared_type)
+                    if ( initial_token.declared_type == DeclaredType.floating.value and 
+                     self.__current_token.declared_type == DeclaredType.integer.value): pass
+                    else: self.__error_log.add_invalid_assignment(self.__current_token, initial_token.declared_type)
             elif Types.what_type(self.__current_token.data) != initial_token.declared_type:
                 if ( Types.what_type(self.__current_token.data) == DeclaredType.integer.value and 
                      initial_token.declared_type == DeclaredType.floating.value): pass

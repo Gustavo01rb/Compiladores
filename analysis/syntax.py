@@ -51,10 +51,45 @@ class Sintax:
             self.__case_reserved_word_declaration_type()
         if self.__current_token.data in C_RESERVED_WORD.returns():
             self.__case_reserved_word_returns()
+        if self.__current_token.data in C_RESERVED_WORD.functions():
+            self.__case_reserved_word_functions()
 
     def __case_reserved_word_returns(self):
         self.__equation()
-        
+
+    def __case_reserved_word_functions(self):    
+        if self.__current_token.data == "for" : self.__case_reserved_word_functions_for() 
+    
+    def __case_reserved_word_functions_for(self):
+        self.__next_token()
+        if self.__current_token.data != "(":
+            self.__error_log.add_unspected_token(self.__current_token, "(", TokensTypes.delimiter.value)
+        self.__next_token()
+        if self.__current_token.type == TokensTypes.identifier.value: pass
+        elif  self.__current_token.data in C_RESERVED_WORD.type_declaration(): self.__next_token()
+        else: self.__error_log.add_generic_error(self.__current_token)
+        self.__next_token()
+        if self.__current_token.type != TokensTypes.assignment_operator.value:
+            self.__error_log.add_unspected_token(self.__current_token, "=", TokensTypes.assignment_operator.value)
+        self.__next_token()
+        if self.__current_token.type != TokensTypes.numeric_constant.value:
+            self.__error_log.add_unspected_token(self.__current_token, "=", TokensTypes.assignment_operator.value)
+        self.__next_token()
+        if self.__current_token.data != ";":
+            self.__error_log.add_unspected_token(self.__current_token, ";", TokensTypes.delimiter.value)
+        self.__next_token()
+        if self.__current_token.type != TokensTypes.identifier.value:
+            self.__error_log.add_unspected_token(self.__current_token, "Nome de variável", TokensTypes.identifier.value)
+        self.__next_token()
+        if self.__current_token.type != TokensTypes.logic_operator.value:
+            self.__error_log.add_unspected_token(self.__current_token, "", TokensTypes.logic_operator.value)
+        self.__next_token()
+        if self.__current_token.type != TokensTypes.numeric_constant.value:
+            self.__error_log.add_unspected_token(self.__current_token, "=", TokensTypes.assignment_operator.value)
+        self.__next_token()
+        if self.__current_token.data != ";":
+            self.__error_log.add_unspected_token(self.__current_token, ";", TokensTypes.delimiter.value)      
+
     def __case_reserved_word_directives(self):
         if self.__current_token.data == "#include": 
             self.__next_token()
@@ -148,8 +183,3 @@ class Sintax:
             self.analyze()
             if self.__current_token.data != '}':
                 self.__error_log.add_unspected_token(self.__current_token, '}', TokensTypes.delimiter.value)
-
-
-        
-          
-       

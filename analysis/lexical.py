@@ -110,7 +110,7 @@ class Lexical:
                     self.__tokens[index+1].type = TokensTypes.delimiter.value
 
     def print_tokens(self):
-        file = open('outputs/lexical.txt','w')
+        file = open('outputs/lexical.txt','a')
         
         print("\nTokens obtidos:")
         file.write("\nTokens obtidos na análise léxica:\n\n")
