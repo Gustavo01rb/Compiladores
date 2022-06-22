@@ -1,9 +1,11 @@
 class Semantic_error:
-    def __init__(self) -> None:
+    def __init__(self, file_name) -> None:
         self.__errors = list()
+        self.__file_name = file_name
     
     def print(self): 
-        file = open('outputs/semantic.txt','a')
+        directory = "outputs/semantic/" + self.__file_name
+        file = open(directory,'w')
         if len(self.__errors) == 0: 
             file.write("Não foram encontrados erros semânticos\n")
             print("\nNão foram encontrados erros semânticos\n\n")

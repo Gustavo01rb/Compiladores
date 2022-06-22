@@ -5,11 +5,11 @@ from errors.syntactic_error import Sintactic_error
 
 class Sintax:
 
-    def __init__(self, listToken) -> None:
+    def __init__(self, listToken, file_name) -> None:
         self.__tokens        = listToken
         self.__current_index = 0
         self.__current_token = listToken[0]
-        self.__error_log     = Sintactic_error()
+        self.__error_log     = Sintactic_error(file_name)
     
     #Função de movimentação nos Tokens
     def __next_token(self): 

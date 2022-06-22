@@ -7,12 +7,12 @@ from utils.enumClass import DeclaredType
 
 class Semantic:
     
-    def __init__(self, listToken) -> None:
+    def __init__(self, listToken, file_name) -> None:
         self.__tokens        = listToken
         self.__current_index = 0
         self.__current_token = listToken[0]
         self.__scope = list()
-        self.__error_log = Semantic_error()
+        self.__error_log = Semantic_error(file_name)
     
     def __next_token(self): 
         self.__current_index += 1

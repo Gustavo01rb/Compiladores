@@ -1,9 +1,11 @@
 class Sintactic_error:
-    def __init__(self) -> None:
+    def __init__(self, file_name) -> None:
         self.__errors = list()
+        self.__file_name = file_name
     
     def print(self): 
-        file = open('outputs/sintax.txt','a')
+        directory = "outputs/syntax/" + self.__file_name
+        file = open(directory,'w')
         if len(self.__errors) == 0: 
             file.write("Não foram encontrados erros sintáticos\n")
             print("\nNão foram encontrados erros sintáticos\n\n")

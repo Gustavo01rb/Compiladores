@@ -12,7 +12,8 @@ class Lexical:
 
     def __validate_file_name(self):
         try:
-            self.__content_file = open(self.__file_name, "r")
+            directory = "inputs/" + self.__file_name
+            self.__content_file = open(directory, "r")
         except:
             raise ValueError("Falha ao abrir o arquivo {}, verifique se o mesmo existe!".format(self.__file_name))
      
@@ -110,7 +111,8 @@ class Lexical:
                     self.__tokens[index+1].type = TokensTypes.delimiter.value
 
     def print_tokens(self):
-        file = open('outputs/lexical.txt','a')
+        directory = "outputs/lexical/" + self.__file_name 
+        file = open(directory,'w')
         
         print("\nTokens obtidos:")
         file.write("\nTokens obtidos na análise léxica:\n\n")

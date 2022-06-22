@@ -1,0 +1,2 @@
+[ERRO]-> Atribuição inválida. Linha 7, 'casa' não corresponde ao tipo Flutuante
+[ERRO]-> Atribuição inválida. Linha 7, 'bola' não corresponde ao tipo Flutuante
