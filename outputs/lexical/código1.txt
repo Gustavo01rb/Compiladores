@@ -1,0 +1,106 @@
+
+Tokens obtidos na análise léxica:
+
+-------------------------------------------------
+|  Token    |           Tipo            | Linha |
+-------------------------------------------------
+|  #include | Palavra reservada         |   0   |
+|         < | Delimitador               |   0   |
+|   stdio.h | Biblioteca                |   0   |
+|         > | Delimitador               |   0   |
+|       int | Palavra reservada         |   3   |
+|      main | Identificador de função   |   3   |
+|         ( | Delimitador               |   3   |
+|         ) | Delimitador               |   3   |
+|         { | Delimitador               |   4   |
+|       int | Palavra reservada         |   6   |
+|      arg1 | Identificador             |   6   |
+|         , | Separador                 |   6   |
+|      arg2 | Identificador             |   6   |
+|         , | Separador                 |   6   |
+|      arg3 | Identificador             |   6   |
+|         ; | Delimitador               |   6   |
+|     teste | Identificador             |   7   |
+|         = | Operador de atribuição    |   7   |
+|  "BAnana" | Texto                     |   7   |
+|         ; | Delimitador               |   7   |
+|     float | Palavra reservada         |   9   |
+|      arg4 | Identificador             |   9   |
+|         , | Separador                 |   9   |
+|      arg5 | Identificador             |   9   |
+|         , | Separador                 |   9   |
+|      arg6 | Identificador             |   9   |
+|         ; | Delimitador               |   9   |
+|     scanf | Palavra reservada         |  10   |
+|         ( | Delimitador               |  10   |
+|      "%i" | Texto                     |  10   |
+|         , | Separador                 |  10   |
+|     &arg1 | Identificador             |  10   |
+|         ) | Delimitador               |  10   |
+|         ; | Delimitador               |  10   |
+|     scanf | Palavra reservada         |  11   |
+|         ( | Delimitador               |  11   |
+|      "%i" | Texto                     |  11   |
+|         , | Separador                 |  11   |
+|     &arg2 | Identificador             |  11   |
+|         ) | Delimitador               |  11   |
+|         ; | Delimitador               |  11   |
+|     scanf | Palavra reservada         |  12   |
+|         ( | Delimitador               |  12   |
+|      "%f" | Texto                     |  12   |
+|         , | Separador                 |  12   |
+|     &arg4 | Identificador             |  12   |
+|         ) | Delimitador               |  12   |
+|         ; | Delimitador               |  12   |
+|     scanf | Palavra reservada         |  13   |
+|         ( | Delimitador               |  13   |
+|      "%f" | Texto                     |  13   |
+|         , | Separador                 |  13   |
+|     &arg5 | Identificador             |  13   |
+|         ) | Delimitador               |  13   |
+|         ; | Delimitador               |  13   |
+|      arg6 | Identificador             |  16   |
+|         = | Operador de atribuição    |  16   |
+|         ( | Delimitador               |  16   |
+|     float | Palavra reservada         |  16   |
+|         ) | Delimitador               |  16   |
+|      arg1 | Identificador             |  16   |
+|         + | Operador aritmético       |  16   |
+|         ( | Delimitador               |  16   |
+|     float | Palavra reservada         |  16   |
+|         ) | Delimitador               |  16   |
+|      arg2 | Identificador             |  16   |
+|         * | Operador aritmético       |  16   |
+|      arg4 | Identificador             |  16   |
+|         ; | Delimitador               |  16   |
+|      arg3 | Identificador             |  17   |
+|         = | Operador de atribuição    |  17   |
+|      arg2 | Identificador             |  17   |
+|         - | Operador aritmético       |  17   |
+|      arg1 | Identificador             |  17   |
+|         * | Operador aritmético       |  17   |
+|      arg6 | Identificador             |  17   |
+|         ; | Delimitador               |  17   |
+|     float | Palavra reservada         |  18   |
+|  operacao | Identificador             |  18   |
+|         = | Operador de atribuição    |  18   |
+|      arg1 | Identificador             |  18   |
+|         * | Operador aritmético       |  18   |
+|      arg2 | Identificador             |  18   |
+|         / | Operador aritmético       |  18   |
+|      arg3 | Identificador             |  18   |
+|         - | Operador aritmético       |  18   |
+|      arg4 | Identificador             |  18   |
+|         / | Operador aritmético       |  18   |
+|      arg5 | Identificador             |  18   |
+|         * | Operador aritmético       |  18   |
+|      arg6 | Identificador             |  18   |
+|         ; | Delimitador               |  18   |
+|    return | Palavra reservada         |  21   |
+|         0 | Constante Numérica        |  21   |
+|         ; | Delimitador               |  21   |
+|         } | Delimitador               |  22   |
+-------------------------------------------------
+
+
+Quantidade de Tokens: 96

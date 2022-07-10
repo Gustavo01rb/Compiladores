@@ -1,0 +1,171 @@
+
+Tokens obtidos na análise léxica:
+
+-------------------------------------------------
+|  Token    |           Tipo            | Linha |
+-------------------------------------------------
+|  #include | Palavra reservada         |   0   |
+|         < | Delimitador               |   0   |
+|   stdio.h | Biblioteca                |   0   |
+|         > | Delimitador               |   0   |
+|         / | Operador aritmético       |   0   |
+|         / | Operador aritmético       |   0   |
+|declaracao | Identificador             |   0   |
+|        de | Identificador             |   0   |
+|biblioteca | Identificador             |   0   |
+|     float | Palavra reservada         |   2   |
+|      soma | Identificador de função   |   2   |
+|         ( | Delimitador               |   2   |
+|     float | Palavra reservada         |   2   |
+| operando1 | Identificador             |   2   |
+|         , | Separador                 |   2   |
+|     float | Palavra reservada         |   2   |
+| operando2 | Identificador             |   2   |
+|         ) | Delimitador               |   2   |
+|         { | Delimitador               |   2   |
+|    return | Palavra reservada         |   3   |
+| operando1 | Identificador             |   3   |
+|         + | Operador aritmético       |   3   |
+| operando2 | Identificador             |   3   |
+|         ; | Delimitador               |   3   |
+|         } | Delimitador               |   4   |
+|     float | Palavra reservada         |   5   |
+| subtracao | Identificador de função   |   5   |
+|         ( | Delimitador               |   5   |
+|     float | Palavra reservada         |   5   |
+| operando1 | Identificador             |   5   |
+|         , | Separador                 |   5   |
+|     float | Palavra reservada         |   5   |
+| operando2 | Identificador             |   5   |
+|         ) | Delimitador               |   5   |
+|         { | Delimitador               |   5   |
+|    return | Palavra reservada         |   6   |
+| operando1 | Identificador             |   6   |
+|         - | Operador aritmético       |   6   |
+| operando2 | Identificador             |   6   |
+|         ; | Delimitador               |   6   |
+|         } | Delimitador               |   7   |
+|     float | Palavra reservada         |   8   |
+|   divisao | Identificador de função   |   8   |
+|         ( | Delimitador               |   8   |
+|     float | Palavra reservada         |   8   |
+| operando1 | Identificador             |   8   |
+|         , | Separador                 |   8   |
+|     float | Palavra reservada         |   8   |
+| operando2 | Identificador             |   8   |
+|         ) | Delimitador               |   8   |
+|         { | Delimitador               |   8   |
+|    return | Palavra reservada         |   9   |
+| operando1 | Identificador             |   9   |
+|         / | Operador aritmético       |   9   |
+| operando2 | Identificador             |   9   |
+|         ; | Delimitador               |   9   |
+|         } | Delimitador               |  10   |
+|     float | Palavra reservada         |  11   |
+|multiplicacao | Identificador de função   |  11   |
+|         ( | Delimitador               |  11   |
+|     float | Palavra reservada         |  11   |
+| operando1 | Identificador             |  11   |
+|         , | Separador                 |  11   |
+|     float | Palavra reservada         |  11   |
+| operando2 | Identificador             |  11   |
+|         ) | Delimitador               |  11   |
+|         { | Delimitador               |  11   |
+|    return | Palavra reservada         |  12   |
+| operando1 | Identificador             |  12   |
+|         / | Operador aritmético       |  12   |
+| operando2 | Identificador             |  12   |
+|         ; | Delimitador               |  12   |
+|         } | Delimitador               |  13   |
+|      void | Palavra reservada         |  14   |
+|    testar | Identificador de função   |  14   |
+|         ( | Delimitador               |  14   |
+|     float | Palavra reservada         |  14   |
+|         a | Identificador             |  14   |
+|         ) | Delimitador               |  14   |
+|         { | Delimitador               |  14   |
+|         a | Identificador             |  15   |
+|         = | Operador de atribuição    |  15   |
+|        10 | Constante Numérica        |  15   |
+|         ; | Delimitador               |  15   |
+|         } | Delimitador               |  16   |
+|       int | Palavra reservada         |  18   |
+|      main | Identificador de função   |  18   |
+|         ( | Delimitador               |  18   |
+|       int | Palavra reservada         |  18   |
+|      argc | Identificador             |  18   |
+|         , | Separador                 |  18   |
+|      char | Palavra reservada         |  18   |
+|         * | Operador aritmético       |  18   |
+|      argv | Identificador             |  18   |
+|         [ | Delimitador               |  18   |
+|         ] | Delimitador               |  18   |
+|         ) | Delimitador               |  18   |
+|         / | Operador aritmético       |  18   |
+|         / | Operador aritmético       |  18   |
+|    função | Identificador             |  18   |
+|      main | Identificador             |  18   |
+|         { | Delimitador               |  19   |
+|       int | Palavra reservada         |  20   |
+|      soma | Identificador             |  20   |
+|         = | Operador de atribuição    |  20   |
+|      5.25 | Constante Numérica        |  20   |
+|         ; | Delimitador               |  20   |
+|       int | Palavra reservada         |  21   |
+|    testar | Identificador             |  21   |
+|         = | Operador de atribuição    |  21   |
+|         5 | Constante Numérica        |  21   |
+|         ; | Delimitador               |  21   |
+|       int | Palavra reservada         |  22   |
+| subtracao | Identificador             |  22   |
+|         = | Operador de atribuição    |  22   |
+|      6.75 | Constante Numérica        |  22   |
+|         ; | Delimitador               |  22   |
+|       int | Palavra reservada         |  23   |
+|      arg3 | Identificador             |  23   |
+|         = | Operador de atribuição    |  23   |
+|      soma | Identificador de função   |  23   |
+|         ( | Delimitador               |  23   |
+|      soma | Identificador             |  23   |
+|         , | Separador                 |  23   |
+| subtracao | Identificador             |  23   |
+|         ) | Delimitador               |  23   |
+|         - | Operador aritmético       |  23   |
+| subtracao | Identificador de função   |  23   |
+|         ( | Delimitador               |  23   |
+| subtracao | Identificador             |  23   |
+|         , | Separador                 |  23   |
+|      soma | Identificador             |  23   |
+|         ) | Delimitador               |  23   |
+|         * | Operador aritmético       |  23   |
+|multiplicacao | Identificador de função   |  23   |
+|         ( | Delimitador               |  23   |
+|      soma | Identificador             |  23   |
+|         , | Separador                 |  23   |
+| subtracao | Identificador             |  23   |
+|         ) | Delimitador               |  23   |
+|         / | Operador aritmético       |  23   |
+|   divisao | Identificador de função   |  23   |
+|         ( | Delimitador               |  23   |
+| subtracao | Identificador             |  23   |
+|         , | Separador                 |  23   |
+|      soma | Identificador             |  23   |
+|         ) | Delimitador               |  23   |
+|         ; | Delimitador               |  23   |
+|    printf | Identificador de função   |  24   |
+|         ( | Delimitador               |  24   |
+|         " | Identificador             |  24   |
+|         % | Operador aritmético       |  24   |
+|        i" | Identificador             |  24   |
+|         , | Separador                 |  24   |
+|      arg3 | Identificador             |  24   |
+|         ) | Delimitador               |  24   |
+|         ; | Delimitador               |  24   |
+|    return | Palavra reservada         |  25   |
+|      soma | Identificador             |  25   |
+|         ; | Delimitador               |  25   |
+|         } | Delimitador               |  26   |
+-------------------------------------------------
+
+
+Quantidade de Tokens: 161

@@ -1,1 +1,0 @@
-[ERRO]-> Variável não declarda. Linha 11, y não declarado ou não existe.

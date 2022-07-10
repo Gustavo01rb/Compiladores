@@ -1,1 +1,0 @@
-[ERRO]-> Atribuição inválida. Linha 7, "casa" não corresponde ao tipo Inteiro

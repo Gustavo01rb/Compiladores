@@ -1,1 +1,0 @@
-[ERRO]-> Divisão por zero. Linha 6, não é possível realizar essa operação.

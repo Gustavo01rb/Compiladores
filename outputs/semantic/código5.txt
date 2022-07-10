@@ -1,0 +1,34 @@
+[ERRO]-> Variável não declarda. Linha 0, declaracao não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 0, de não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 0, biblioteca não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 2, argv não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 2, função não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 4, declaracao não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 4, de não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 4, inteiros não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 5, declaracao não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 5, de não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 5, floats não declarado ou não existe.
+[ERRO]-> Atribuição inválida. Linha 6, 0.5 não corresponde ao tipo Inteiro
+[ERRO]-> Atribuição inválida. Linha 7, 1.75 não corresponde ao tipo Inteiro
+[ERRO]-> Variável não declarda. Linha 11, realizacao não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 11, uma não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 11, operação não declarado ou não existe.
+[ERRO]-> Atribuição inválida. Linha 12, arg6 não corresponde ao tipo Inteiro
+[ERRO]-> Variável não declarda. Linha 12, realiza não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 12, outra não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 12, operacao não declarado ou não existe.
+[ERRO]-> Atribuição inválida. Linha 13, arg1 não corresponde ao tipo Flutuante
+[ERRO]-> Variável não declarda. Linha 13, realiza não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 13, a não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 13, última não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 13, operação não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 14, " não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 14, i\n" não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 15, " não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 15, f\n" não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 16, " não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 16, f\n" não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 18, finaliza não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 18, a não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 18, função não declarado ou não existe.

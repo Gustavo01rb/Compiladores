@@ -1,0 +1,10 @@
+[ERRO] -> Um erro inexperado ocorreu na linha 0. Referencia não definida para de.
+[ERRO] -> Um erro inexperado ocorreu na linha 2. Referencia não definida para int.
+[ERRO]-> Linha: 2 Esperado um Identificador no lugar de char
+[ERRO] -> Um erro inexperado ocorreu na linha 2. Referencia não definida para [.
+[ERRO] -> Um erro inexperado ocorreu na linha 2. Referencia não definida para main.
+[ERRO]-> Linha: 7 Esperado um Identificador no lugar de 33
+[ERRO] -> Um erro inexperado ocorreu na linha 9. Referencia não definida para *.
+[ERRO] -> Um erro inexperado ocorreu na linha 9. Referencia não definida para -.
+[ERRO] -> Um erro inexperado ocorreu na linha 9. Referencia não definida para +.
+[ERRO] -> Um erro inexperado ocorreu na linha 9. Referencia não definida para ;.

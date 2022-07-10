@@ -1,1 +1,0 @@
-[ERRO]-> Variável não declarda. Linha 6, f não declarado ou não existe.

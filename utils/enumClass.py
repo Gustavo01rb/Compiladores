@@ -18,13 +18,13 @@ class TokensTypes(Enum):
 class RegexStructure(Enum):
     reserved_word        = C_RESERVED_WORD.all()
     assignment_operator  = [r'=|\+=|-=', TokensTypes.assignment_operator.value]
-    arithimetic_operator = [r'\+\+|--|\+|-|\*|/|%', TokensTypes.arithimetic_operator.value]
+    txt                  = [r'^".*"$', TokensTypes.txt.value]
+    separator            = [r',', TokensTypes.separator.value]
+    character            = [r'^\'\w+\'$', TokensTypes.character.value]
+    library              = [r'\w+\.h$', TokensTypes.library.value]
+    arithimetic_operator = [r'\+\+|--|\+|-|\*|/', TokensTypes.arithimetic_operator.value]
     logic_operator       = [r'==|>=|<=|!=|!|<|>', TokensTypes.logic_operator.value] 
     delimiter            = [r'\(|\)|{|}|\[|]|;', TokensTypes.delimiter.value]
-    library              = [r'\w+\.h$', TokensTypes.library.value]
-    separator            = [r',', TokensTypes.separator.value]
-    txt                  = [r'^"\w+"$', TokensTypes.txt.value]
-    character            = [r'^\'\w+\'$', TokensTypes.character.value]
 
 
 class TokenStructure(Enum):

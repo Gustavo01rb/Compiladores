@@ -1,3 +1,4 @@
+import io, os
 from utils.enumClass import DeclaredType, RegexStructure, TokensTypes, TokenStructure
 from utils.token import Token
 import re
@@ -20,15 +21,35 @@ class Lexical:
     @property
     def tokens(self): return self.__tokens
 
+    def __remove_coments(self):
+        output  = io.BytesIO()
+        wrapper = io.TextIOWrapper(
+            output,
+            encoding='cp1252',
+            line_buffering=True,)
+
+        for line in self.__content_file:
+            line = line.split("//") # Função que separa as stirngs. Nesse caso com base em " "
+            line = line[0]+'\n'
+            wrapper.write(line)
+        
+        self.__content_file = wrapper
+        
+
+        
+
     def tokenization(self):  #Método que gerencia a tokenização
-        for index, line in enumerate(self.__content_file):
+        self.__remove_coments()
+        
+        self.__content_file.seek(0,0)
+        for index, line in enumerate(self.__content_file.readlines()):
             line = line.strip() # Função que retira os espaços desnecesários ao final e início da string
             line = line.split() # Função que separa as stirngs. Nesse caso com base em " "
             for iterator in line:
                 iterator = iterator.strip()
                 self.__validate_token(iterator, index)
         self.__separate_identifier()
-     
+
     def __validate_token(self, token, line):
         if token == "" or token == None: return #Verificação de palavra vazia
         parsed_token = self.__analyse_token(token)
