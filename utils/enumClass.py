@@ -14,6 +14,7 @@ class TokensTypes(Enum):
     separator            = "Separador"
     txt                  = "Texto"
     character            = "Caractere"
+    address_identifier   = "Identificador de endereço"
 
 class RegexStructure(Enum):
     reserved_word        = C_RESERVED_WORD.all()
@@ -25,7 +26,7 @@ class RegexStructure(Enum):
     arithimetic_operator = [r'\+\+|--|\+|-|\*|/', TokensTypes.arithimetic_operator.value]
     logic_operator       = [r'==|>=|<=|!=|!|<|>', TokensTypes.logic_operator.value] 
     delimiter            = [r'\(|\)|{|}|\[|]|;', TokensTypes.delimiter.value]
-
+    address_identifier   = [r'&', TokensTypes.address_identifier.value]
 
 class TokenStructure(Enum):
     type  = 'type'

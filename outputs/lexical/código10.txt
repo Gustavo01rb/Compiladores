@@ -8,75 +8,66 @@ Tokens obtidos na análise léxica:
 |         < | Delimitador               |   0   |
 |   stdio.h | Biblioteca                |   0   |
 |         > | Delimitador               |   0   |
-|         / | Operador aritmético       |   0   |
-|         / | Operador aritmético       |   0   |
-|declaracao | Identificador             |   0   |
-|        de | Identificador             |   0   |
-|biblioteca | Identificador             |   0   |
-|       int | Palavra reservada         |   2   |
-|      main | Identificador de função   |   2   |
-|         ( | Delimitador               |   2   |
-|       int | Palavra reservada         |   2   |
-|      argc | Identificador             |   2   |
-|         , | Separador                 |   2   |
-|      char | Palavra reservada         |   2   |
-|         * | Operador aritmético       |   2   |
-|      argv | Identificador             |   2   |
-|         [ | Delimitador               |   2   |
-|         ] | Delimitador               |   2   |
-|         ) | Delimitador               |   2   |
-|         / | Operador aritmético       |   2   |
-|         / | Operador aritmético       |   2   |
-|    função | Identificador             |   2   |
-|      main | Identificador             |   2   |
-|         { | Delimitador               |   3   |
-|       int | Palavra reservada         |   4   |
-|      arg1 | Identificador             |   4   |
-|         = | Operador de atribuição    |   4   |
-|         5 | Constante Numérica        |   4   |
-|         ; | Delimitador               |   4   |
-|       int | Palavra reservada         |   5   |
-|      arg2 | Identificador             |   5   |
-|         = | Operador de atribuição    |   5   |
-|      6.75 | Constante Numérica        |   5   |
-|         ; | Delimitador               |   5   |
+|       int | Palavra reservada         |   3   |
+|      main | Identificador de função   |   3   |
+|         ( | Delimitador               |   3   |
+|       int | Palavra reservada         |   3   |
+|      argc | Identificador             |   3   |
+|         , | Separador                 |   3   |
+|      char | Palavra reservada         |   3   |
+|         * | Operador aritmético       |   3   |
+|      argv | Identificador             |   3   |
+|         [ | Delimitador               |   3   |
+|         ] | Delimitador               |   3   |
+|         ) | Delimitador               |   3   |
+|         { | Delimitador               |   4   |
 |       int | Palavra reservada         |   6   |
-|      arg3 | Identificador             |   6   |
+|      arg1 | Identificador             |   6   |
 |         = | Operador de atribuição    |   6   |
-|      4.35 | Constante Numérica        |   6   |
+|         5 | Constante Numérica        |   6   |
 |         ; | Delimitador               |   6   |
-|       int | Palavra reservada         |   7   |
-|      arg4 | Identificador             |   7   |
-|         = | Operador de atribuição    |   7   |
-|         3 | Constante Numérica        |   7   |
-|         , | Separador                 |   7   |
-|        33 | Constante Numérica        |   7   |
-|         ; | Delimitador               |   7   |
-| resultado | Identificador             |   9   |
-|         = | Operador de atribuição    |   9   |
-|         ( | Delimitador               |   9   |
-|      arg1 | Identificador             |   9   |
-|         + | Operador aritmético       |   9   |
-|      arg2 | Identificador             |   9   |
-|         - | Operador aritmético       |   9   |
-|      arg3 | Identificador             |   9   |
-|         * | Operador aritmético       |   9   |
-|      arg4 | Identificador             |   9   |
-|         ) | Delimitador               |   9   |
-|         / | Operador aritmético       |   9   |
-|      arg1 | Identificador             |   9   |
-|         * | Operador aritmético       |   9   |
-|      arg2 | Identificador             |   9   |
-|         - | Operador aritmético       |   9   |
-|      arg3 | Identificador             |   9   |
-|         + | Operador aritmético       |   9   |
-|      arg4 | Identificador             |   9   |
-|         ; | Delimitador               |   9   |
-|    return | Palavra reservada         |  11   |
-|      arg1 | Identificador             |  11   |
-|         ; | Delimitador               |  11   |
-|         } | Delimitador               |  12   |
+|       int | Palavra reservada         |   8   |
+|      arg2 | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|      6.75 | Constante Numérica        |   8   |
+|         ; | Delimitador               |   8   |
+|       int | Palavra reservada         |  10   |
+|      arg3 | Identificador             |  10   |
+|         = | Operador de atribuição    |  10   |
+|      4.35 | Constante Numérica        |  10   |
+|         ; | Delimitador               |  10   |
+|       int | Palavra reservada         |  12   |
+|      arg4 | Identificador             |  12   |
+|         = | Operador de atribuição    |  12   |
+|         3 | Constante Numérica        |  12   |
+|         , | Separador                 |  12   |
+|        33 | Constante Numérica        |  12   |
+|         ; | Delimitador               |  12   |
+| resultado | Identificador             |  16   |
+|         = | Operador de atribuição    |  16   |
+|         ( | Delimitador               |  16   |
+|      arg1 | Identificador             |  16   |
+|         + | Operador aritmético       |  16   |
+|      arg2 | Identificador             |  16   |
+|         - | Operador aritmético       |  16   |
+|      arg3 | Identificador             |  16   |
+|         * | Operador aritmético       |  16   |
+|      arg4 | Identificador             |  16   |
+|         ) | Delimitador               |  16   |
+|         / | Operador aritmético       |  16   |
+|      arg1 | Identificador             |  16   |
+|         * | Operador aritmético       |  16   |
+|      arg2 | Identificador             |  16   |
+|         - | Operador aritmético       |  16   |
+|      arg3 | Identificador             |  16   |
+|         + | Operador aritmético       |  16   |
+|      arg4 | Identificador             |  16   |
+|         ; | Delimitador               |  16   |
+|    return | Palavra reservada         |  20   |
+|      arg1 | Identificador             |  20   |
+|         ; | Delimitador               |  20   |
+|         } | Delimitador               |  22   |
 -------------------------------------------------
 
 
-Quantidade de Tokens: 72
+Quantidade de Tokens: 63
