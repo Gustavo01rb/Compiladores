@@ -1,9 +1,0 @@
-[ERRO]-> Linha: 3 Esperado um Identificador no lugar de char
-[ERRO] -> Um erro inexperado ocorreu na linha 3. Referencia não definida para [.
-[ERRO]-> Linha: 12 Esperado um Identificador no lugar de 33
-[ERRO] -> Um erro inexperado ocorreu na linha 16. Referencia não definida para *.
-[ERRO] -> Um erro inexperado ocorreu na linha 16. Referencia não definida para -.
-[ERRO] -> Um erro inexperado ocorreu na linha 16. Referencia não definida para +.
-[ERRO] -> Um erro inexperado ocorreu na linha 16. Referencia não definida para ;.
-[ERRO] -> Sintaxe inválida: Verifique a linha 22, esperado um(a) Delimitador ()) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 22, esperado um(a) Delimitador ({) no lugar de }.

@@ -1,9 +1,0 @@
-[ERRO] -> Um erro inexperado ocorreu na linha 8. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 9. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 10. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 11. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 14. Referencia não definida para float.
-[ERRO] -> Um erro inexperado ocorreu na linha 14. Referencia não definida para +.
-[ERRO]-> Linha: 14 Esperado um Identificador no lugar de )
-[ERRO] -> Um erro inexperado ocorreu na linha 14. Referencia não definida para *.
-[ERRO] -> Um erro inexperado ocorreu na linha 14. Referencia não definida para ;.

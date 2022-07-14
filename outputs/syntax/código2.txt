@@ -1,6 +1,0 @@
-[ERRO] -> Um erro inexperado ocorreu na linha 8. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 9. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 10. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 11. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 17. Referencia não definida para >.
-[ERRO] -> Um erro inexperado ocorreu na linha 17. Referencia não definida para ).

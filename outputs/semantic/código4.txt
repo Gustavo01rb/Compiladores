@@ -1,3 +1,0 @@
-[ERRO]-> Variável não declarda. Linha 3, argv não declarado ou não existe.
-[ERRO]-> Atribuição inválida. Linha 15, arg6 não corresponde ao tipo Inteiro
-[ERRO]-> Atribuição inválida. Linha 16, arg1 não corresponde ao tipo Flutuante

@@ -1,4 +1,0 @@
-[ERRO]-> Atribuição inválida. Linha 15, arg6 não corresponde ao tipo Inteiro
-[ERRO]-> Atribuição inválida. Linha 16, arg1 não corresponde ao tipo Flutuante
-[ERRO]-> Atribuição inválida. Linha 25, arg5 não corresponde ao tipo Inteiro
-[ERRO]-> Atribuição inválida. Linha 25, arg6 não corresponde ao tipo Inteiro

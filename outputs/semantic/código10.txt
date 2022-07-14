@@ -1,4 +1,0 @@
-[ERRO]-> Variável não declarda. Linha 3, argv não declarado ou não existe.
-[ERRO]-> Atribuição inválida. Linha 8, 6.75 não corresponde ao tipo Inteiro
-[ERRO]-> Atribuição inválida. Linha 10, 4.35 não corresponde ao tipo Inteiro
-[ERRO]-> Variável não declarda. Linha 16, resultado não declarado ou não existe.
