@@ -1,0 +1,56 @@
+
+Tokens obtidos na análise léxica:
+
+-------------------------------------------------
+|  Token    |           Tipo            | Linha |
+-------------------------------------------------
+|  #include | Palavra reservada         |   0   |
+|         < | Delimitador               |   0   |
+|   stdio.h | Biblioteca                |   0   |
+|         > | Delimitador               |   0   |
+|       int | Palavra reservada         |   4   |
+|      main | Identificador de função   |   4   |
+|         ( | Delimitador               |   4   |
+|         ) | Delimitador               |   4   |
+|         { | Delimitador               |   6   |
+|     float | Palavra reservada         |   8   |
+|         a | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|        10 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         b | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         5 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         c | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         7 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         d | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|        11 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         e | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|        15 | Constante Numérica        |   8   |
+|         ; | Delimitador               |   8   |
+|         b | Identificador             |  12   |
+|         = | Operador de atribuição    |  12   |
+|       a%b | Identificador             |  12   |
+|         ; | Delimitador               |  12   |
+|         c | Identificador             |  14   |
+|         = | Operador de atribuição    |  14   |
+|         b | Identificador             |  14   |
+|         + | Operador aritmético       |  14   |
+|    'casa' | Caractere                 |  14   |
+|         + | Operador aritmético       |  14   |
+|    'bola' | Caractere                 |  14   |
+|         ; | Delimitador               |  14   |
+|    return | Palavra reservada         |  18   |
+|         0 | Constante Numérica        |  18   |
+|         ; | Delimitador               |  18   |
+|         } | Delimitador               |  20   |
+-------------------------------------------------
+
+
+Quantidade de Tokens: 46

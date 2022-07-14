@@ -1,0 +1,4 @@
+[ERRO]-> Atribuição inválida. Linha 12, 5.6 não corresponde ao tipo Inteiro
+[ERRO]-> Atribuição inválida. Linha 12, 1.7 não corresponde ao tipo Inteiro
+[ERRO]-> Atribuição inválida. Linha 12, 2.75 não corresponde ao tipo Inteiro
+[ERRO]-> Atribuição inválida. Linha 12, 7.97 não corresponde ao tipo Inteiro

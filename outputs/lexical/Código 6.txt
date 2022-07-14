@@ -1,0 +1,50 @@
+
+Tokens obtidos na análise léxica:
+
+-------------------------------------------------
+|  Token    |           Tipo            | Linha |
+-------------------------------------------------
+|  #include | Palavra reservada         |   0   |
+|         < | Delimitador               |   0   |
+|   stdio.h | Biblioteca                |   0   |
+|         > | Delimitador               |   0   |
+|       int | Palavra reservada         |   4   |
+|      main | Identificador de função   |   4   |
+|         ( | Delimitador               |   4   |
+|         ) | Delimitador               |   4   |
+|         { | Delimitador               |   6   |
+|       int | Palavra reservada         |   8   |
+|         a | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         0 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         b | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         0 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         c | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         0 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         d | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         0 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         e | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         0 | Constante Numérica        |   8   |
+|         ; | Delimitador               |   8   |
+|         b | Identificador             |  12   |
+|         = | Operador de atribuição    |  12   |
+|         0 | Constante Numérica        |  12   |
+|         / | Operador aritmético       |  12   |
+|         0 | Constante Numérica        |  12   |
+|         ; | Delimitador               |  12   |
+|    return | Palavra reservada         |  16   |
+|         0 | Constante Numérica        |  16   |
+|         ; | Delimitador               |  16   |
+|         } | Delimitador               |  18   |
+-------------------------------------------------
+
+
+Quantidade de Tokens: 40

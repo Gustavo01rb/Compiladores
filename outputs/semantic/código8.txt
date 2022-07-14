@@ -1,18 +1,12 @@
-[ERRO]-> Variável não declarda. Linha 0, declaracao não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 0, de não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 0, biblioteca não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 2, operando2 não declarado ou não existe.
 [ERRO]-> Variável não declarda. Linha 3, operando2 não declarado ou não existe.
 [ERRO]-> Variável não declarda. Linha 5, operando2 não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 6, operando2 não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 8, operando2 não declarado ou não existe.
 [ERRO]-> Variável não declarda. Linha 9, operando2 não declarado ou não existe.
 [ERRO]-> Variável não declarda. Linha 11, operando2 não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 12, operando2 não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 18, argv não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 18, função não declarado ou não existe.
-[ERRO]-> Atribuição inválida. Linha 20, 5.25 não corresponde ao tipo Inteiro
-[ERRO]-> Atribuição inválida. Linha 23, 6.75 não corresponde ao tipo Inteiro
-[ERRO]-> Atribuição inválida. Linha 24, soma não corresponde ao tipo Inteiro
-[ERRO]-> Variável não declarda. Linha 25, " não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 25, i" não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 15, operando2 não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 17, operando2 não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 21, operando2 não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 23, operando2 não declarado ou não existe.
+[ERRO]-> Variável não declarda. Linha 35, argv não declarado ou não existe.
+[ERRO]-> Atribuição inválida. Linha 38, 5.25 não corresponde ao tipo Inteiro
+[ERRO]-> Atribuição inválida. Linha 44, 6.75 não corresponde ao tipo Inteiro
+[ERRO]-> Atribuição inválida. Linha 46, soma não corresponde ao tipo Inteiro

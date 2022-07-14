@@ -1,0 +1,2 @@
+[ERRO]-> Atribuição inválida. Linha 12, "zero" não corresponde ao tipo Inteiro
+[ERRO]-> Atribuição inválida. Linha 12, "zero" não corresponde ao tipo Inteiro

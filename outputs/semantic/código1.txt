@@ -1,6 +1,2 @@
-[ERRO]-> Variável não declarda. Linha 8, &arg1 não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 9, &arg2 não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 10, &arg4 não declarado ou não existe.
-[ERRO]-> Variável não declarda. Linha 11, &arg5 não declarado ou não existe.
 [ERRO]-> Atribuição inválida. Linha 15, arg6 não corresponde ao tipo Inteiro
 [ERRO]-> Atribuição inválida. Linha 16, arg1 não corresponde ao tipo Flutuante

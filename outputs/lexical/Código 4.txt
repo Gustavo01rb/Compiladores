@@ -1,0 +1,105 @@
+
+Tokens obtidos na análise léxica:
+
+-------------------------------------------------
+|  Token    |           Tipo            | Linha |
+-------------------------------------------------
+|  #include | Palavra reservada         |   0   |
+|         < | Delimitador               |   0   |
+|   stdio.h | Biblioteca                |   0   |
+|         > | Delimitador               |   0   |
+|       int | Palavra reservada         |   4   |
+|      main | Identificador de função   |   4   |
+|         ( | Delimitador               |   4   |
+|         ) | Delimitador               |   4   |
+|         { | Delimitador               |   6   |
+|       int | Palavra reservada         |   8   |
+|         a | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|        10 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         b | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         5 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         c | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|         7 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         d | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|        11 | Constante Numérica        |   8   |
+|         , | Separador                 |   8   |
+|         e | Identificador             |   8   |
+|         = | Operador de atribuição    |   8   |
+|        15 | Constante Numérica        |   8   |
+|         ; | Delimitador               |   8   |
+|         a | Identificador             |  12   |
+|         = | Operador de atribuição    |  12   |
+|         b | Identificador             |  12   |
+|         + | Operador aritmético       |  12   |
+|         c | Identificador             |  12   |
+|         - | Operador aritmético       |  12   |
+|         7 | Constante Numérica        |  12   |
+|         * | Operador aritmético       |  12   |
+|         e | Identificador             |  12   |
+|         / | Operador aritmético       |  12   |
+|         a | Identificador             |  12   |
+|         * | Operador aritmético       |  12   |
+|         d | Identificador             |  12   |
+|         - | Operador aritmético       |  12   |
+|         a | Identificador             |  12   |
+|         + | Operador aritmético       |  12   |
+|        10 | Constante Numérica        |  12   |
+|         / | Operador aritmético       |  12   |
+|         ( | Delimitador               |  12   |
+|         c | Identificador             |  12   |
+|         + | Operador aritmético       |  12   |
+|         d | Identificador             |  12   |
+|         + | Operador aritmético       |  12   |
+|        10 | Constante Numérica        |  12   |
+|         ) | Delimitador               |  12   |
+|         ; | Delimitador               |  12   |
+|       for | Palavra reservada         |  14   |
+|         ( | Delimitador               |  14   |
+|       int | Palavra reservada         |  14   |
+|         i | Identificador             |  14   |
+|         = | Operador de atribuição    |  14   |
+|         0 | Constante Numérica        |  14   |
+|         ; | Delimitador               |  14   |
+|         i | Identificador             |  14   |
+|         < | Operador Lógico           |  14   |
+|        10 | Constante Numérica        |  14   |
+|         ; | Delimitador               |  14   |
+|         i | Identificador             |  14   |
+|        ++ | Operador aritmético       |  14   |
+|         ) | Delimitador               |  14   |
+|         { | Delimitador               |  14   |
+|     float | Palavra reservada         |  16   |
+|         y | Identificador             |  16   |
+|         ; | Delimitador               |  16   |
+|         y | Identificador             |  18   |
+|         = | Operador de atribuição    |  18   |
+|         i | Identificador             |  18   |
+|         * | Operador aritmético       |  18   |
+|         a | Identificador             |  18   |
+|         ; | Delimitador               |  18   |
+|         } | Delimitador               |  20   |
+|         b | Identificador             |  22   |
+|         = | Operador de atribuição    |  22   |
+|         c | Identificador             |  22   |
+|         + | Operador aritmético       |  22   |
+|         i | Identificador             |  22   |
+|         * | Operador aritmético       |  22   |
+|         a | Identificador             |  22   |
+|         - | Operador aritmético       |  22   |
+|         y | Identificador             |  22   |
+|         ; | Delimitador               |  22   |
+|    return | Palavra reservada         |  26   |
+|         0 | Constante Numérica        |  26   |
+|         ; | Delimitador               |  26   |
+|         } | Delimitador               |  28   |
+-------------------------------------------------
+
+
+Quantidade de Tokens: 95

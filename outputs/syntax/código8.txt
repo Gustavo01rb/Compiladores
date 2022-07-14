@@ -1,36 +1,33 @@
-[ERRO] -> Um erro inexperado ocorreu na linha 0. Referencia não definida para de.
-[ERRO] -> Um erro inexperado ocorreu na linha 2. Referencia não definida para float.
-[ERRO]-> Linha: 2 Esperado um Identificador no lugar de float
-[ERRO] -> Um erro inexperado ocorreu na linha 2. Referencia não definida para ).
-[ERRO]-> Linha: 5 Esperado um Identificador no lugar de float
-[ERRO] -> Um erro inexperado ocorreu na linha 5. Referencia não definida para ).
-[ERRO]-> Linha: 8 Esperado um Identificador no lugar de float
-[ERRO] -> Um erro inexperado ocorreu na linha 8. Referencia não definida para ).
-[ERRO]-> Linha: 11 Esperado um Identificador no lugar de float
-[ERRO] -> Um erro inexperado ocorreu na linha 11. Referencia não definida para ).
-[ERRO]-> Linha: 14 Esperado um Operador de atribuição no lugar de )
-[ERRO] -> Um erro inexperado ocorreu na linha 14. Referencia não definida para {.
-[ERRO]-> Linha: 18 Esperado um Identificador no lugar de char
-[ERRO] -> Um erro inexperado ocorreu na linha 18. Referencia não definida para [.
-[ERRO] -> Um erro inexperado ocorreu na linha 18. Referencia não definida para main.
-[ERRO] -> Um erro inexperado ocorreu na linha 24. Referencia não definida para ,.
-[ERRO] -> Um erro inexperado ocorreu na linha 24. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 24. Referencia não definida para ,.
-[ERRO] -> Um erro inexperado ocorreu na linha 24. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 24. Referencia não definida para ,.
-[ERRO] -> Um erro inexperado ocorreu na linha 24. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 24. Referencia não definida para ,.
-[ERRO] -> Um erro inexperado ocorreu na linha 24. Referencia não definida para ).
-[ERRO] -> Um erro inexperado ocorreu na linha 25. Referencia não definida para %.
-[ERRO] -> Um erro inexperado ocorreu na linha 25. Referencia não definida para ,.
-[ERRO] -> Um erro inexperado ocorreu na linha 25. Referencia não definida para ).
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ()) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ({) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ()) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ({) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ()) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ({) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ()) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ({) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ()) no lugar de }.
-[ERRO] -> Sintaxe inválida: Verifique a linha 27, esperado um(a) Delimitador ({) no lugar de }.
+[ERRO]-> Linha: 3 Esperado um Identificador no lugar de float
+[ERRO] -> Um erro inexperado ocorreu na linha 3. Referencia não definida para ).
+[ERRO]-> Linha: 9 Esperado um Identificador no lugar de float
+[ERRO] -> Um erro inexperado ocorreu na linha 9. Referencia não definida para ).
+[ERRO]-> Linha: 15 Esperado um Identificador no lugar de float
+[ERRO] -> Um erro inexperado ocorreu na linha 15. Referencia não definida para ).
+[ERRO]-> Linha: 21 Esperado um Identificador no lugar de float
+[ERRO] -> Um erro inexperado ocorreu na linha 21. Referencia não definida para ).
+[ERRO]-> Linha: 27 Esperado um Operador de atribuição no lugar de )
+[ERRO] -> Um erro inexperado ocorreu na linha 27. Referencia não definida para {.
+[ERRO]-> Linha: 35 Esperado um Identificador no lugar de char
+[ERRO] -> Um erro inexperado ocorreu na linha 35. Referencia não definida para [.
+[ERRO] -> Um erro inexperado ocorreu na linha 46. Referencia não definida para ,.
+[ERRO] -> Um erro inexperado ocorreu na linha 46. Referencia não definida para ).
+[ERRO] -> Um erro inexperado ocorreu na linha 46. Referencia não definida para ,.
+[ERRO] -> Um erro inexperado ocorreu na linha 46. Referencia não definida para ).
+[ERRO] -> Um erro inexperado ocorreu na linha 46. Referencia não definida para ,.
+[ERRO] -> Um erro inexperado ocorreu na linha 46. Referencia não definida para ).
+[ERRO] -> Um erro inexperado ocorreu na linha 46. Referencia não definida para ,.
+[ERRO] -> Um erro inexperado ocorreu na linha 46. Referencia não definida para ).
+[ERRO] -> Um erro inexperado ocorreu na linha 48. Referencia não definida para ).
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ()) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ({) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ()) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ({) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ()) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ({) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ()) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ({) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ()) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ({) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ()) no lugar de }.
+[ERRO] -> Sintaxe inválida: Verifique a linha 52, esperado um(a) Delimitador ({) no lugar de }.

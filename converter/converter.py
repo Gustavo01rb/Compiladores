@@ -3,10 +3,11 @@ from utils.C_rules import C_RESERVED_WORD
 from utils.enumClass import TokensTypes
 
 class Converter:
-    def __init__(self, list_tokens) -> None:
+    def __init__(self, list_tokens, file_name) -> None:
         self.__tokens = list_tokens
         self.__current_index = 0
         self.__current_token = list_tokens[0]
+        self.__file_name = file_name
 
     def start(self):
         self.__remove_unnecessary()
@@ -71,7 +72,7 @@ class Converter:
             return
         if self.__current_token.data == "{":
             self.__current_token.data = ":"
-            self.__current_token.line -= 1
+            self.__current_token.line = self.__tokens[self.__current_index - 1].line
             self.__next_token() 
 
     def __analyse(self):
@@ -79,6 +80,9 @@ class Converter:
             if self.__current_token.data in C_RESERVED_WORD.functions():
                 self.__convert_function()
                 continue
+            if self.__current_token.type == TokensTypes.separator.value:
+                self.__current_token.data = ""
+                self.__current_token.line += 1
             self.__next_token()
 
     def __convert_function(self):
@@ -92,13 +96,15 @@ class Converter:
             self.__next_token()
             while current_line == self.__current_token.line:
                 self.__remove_token()
+        else:
+            self.__next_token()
 
     
     def __write_file(self):
         tabulacao = 0
-        file = open("outputs/teste/tese.py", "w")
+        file = open("outputs/converter/" + self.__file_name + ".py", "w")
         file.close()
-        file = open("outputs/teste/tese.py", "a")
+        file = open("outputs/converter/" + self.__file_name + ".py", "a")
         current_line = self.__tokens[0].line;
         for iterator in self.__tokens:
             if iterator.data == ":":
