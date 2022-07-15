@@ -35,9 +35,6 @@ class Lexical:
         
         self.__content_file = wrapper
         
-
-        
-
     def tokenization(self):  #Método que gerencia a tokenização
         self.__remove_coments()
         

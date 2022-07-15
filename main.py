@@ -6,7 +6,7 @@ from converter.converter import Converter
 def main(file_name):
     analisador_lexico = Lexical(file_name)
     analisador_lexico.tokenization()
-    #analisador_lexico.print_tokens()
+    analisador_lexico.print_tokens()
 
     analisador_sintatico = Sintax(analisador_lexico.tokens, file_name)
     analisador_sintatico.analyze(print=True)
